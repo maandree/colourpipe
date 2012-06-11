@@ -1,0 +1,5 @@
+This is a collection of programs used to colourise
+the output of program that do not use colours, or
+skips colouring when the output is piped.
+
+Please fork and extend with addition colourisers.

@@ -61,9 +61,6 @@ public class Ecj
 		continue;
 	    }
 	    
-  /*
-76. ERROR in src/se/kth/maandree/javagen/PropertyGenerator.java (at line 192)
-  */
 	    String intro = line;
 	    String code = sc.nextLine();
 	    String mark = sc.nextLine();

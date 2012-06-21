@@ -18,5 +18,5 @@ install:
 	install -m 755 colourpipe.* *-colour "${DESTDIR}/usr/bin"
 
 uninstall:
-	unlink ${DESTDIR}/usr/bin/colourpipe.*
-	unlink ${DESTDIR}/usr/bin/{javac,ecj}-colour
+	rm -f ${DESTDIR}/usr/bin/colourpipe.*
+	rm -f ${DESTDIR}/usr/bin/{javac,ecj}-colour

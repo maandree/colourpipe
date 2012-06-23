@@ -64,6 +64,13 @@ public class Ecj
 	    String intro = line;
 	    String code = sc.nextLine();
 	    String mark = sc.nextLine();
+	    
+	    while ((mark.replace("\t", "").replace(" ", "").replace("^", "").isEmpty() && mark.contains("^")) == false)
+	    {
+		code += "\n" + mark;
+		mark = sc.nextLine();
+	    }
+	    
 	    String info = sc.nextLine();
 	    
 	    String num = intro.substring(0, intro.indexOf(' ') + 1);
@@ -89,6 +96,11 @@ public class Ecj
 	    while ((i < code.length()) && (j < mark.length()))
 	    {
 		String c = Character.toString(code.charAt(i++));
+		//while (c.equals("\n"))
+		//{
+		//    System.out.println();
+		//    c = Character.toString(code.charAt(i++));
+		//}
 		String m = Character.toString(mark.charAt(j++));
 		if ((c.charAt(0) & 0xDC00) == 0xD800)  c += code.charAt(i++);
 		if ((m.charAt(0) & 0xDC00) == 0xD800)  m += mark.charAt(i++);

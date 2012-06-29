@@ -55,9 +55,15 @@ public class Ecj
 		System.out.println("\033[36m" + line + "\033[39m");
 		break;
 	    }
-	    if (line.equals("----------") && first)
+	    if (line.startsWith("-------"))
 	    {
+		first = false;
 		System.out.println("\033[1;30m" + line + "\033[21;39m");
+		continue;
+	    }
+	    if (first)
+	    {
+		System.out.println("\033[35m" + line + "\033[39m");
 		continue;
 	    }
 	    

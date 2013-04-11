@@ -1,7 +1,7 @@
 # Maintainer: Mattias Andrée <`base64 -d`(bWFhbmRyZWUK)@member.fsf.org>
 pkgname=colourpipe
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Collection of programs used to colour the output of other programs"
 arch=('any')
 url="https://github.com/maandree/colourpipe"
@@ -15,10 +15,10 @@ md5sums=(e558103de0b2cea5b53c1f5542b1992c)
 
 build() {
   cd maandree-colourpipe-*
-  make DESTDIR="$pkgdir/"
+  MAKEFLAGS= make DESTDIR="$pkgdir/"
 }
 
 package() {
   cd maandree-colourpipe-*
-  make DESTDIR="$pkgdir/" install
+  MAKEFLAGS= make DESTDIR="$pkgdir/" install
 }

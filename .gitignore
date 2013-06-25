@@ -1,0 +1,12 @@
+_/
+bin/
+\#*\#
+.*
+!.git*
+*~
+*.bak
+*.sw[op]
+colourpipe.*
+*-colour
+/dist/
+!/dist/*/*/PKGBUILD

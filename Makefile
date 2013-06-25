@@ -1,3 +1,6 @@
+PREFIX=/usr
+BIN=/bin
+
 all: javac ecj
 
 javac:
@@ -21,9 +24,9 @@ ecj:
 	rm *~ 2>/dev/null || true
 
 install: all
-	install -d "${DESTDIR}/usr/bin"
-	install -m 755 colourpipe.* *-colour "${DESTDIR}/usr/bin"
+	install -d "$(DESTDIR)$(PREFIX)$(BIN)"
+	install -m 755 colourpipe.* *-colour "$(DESTDIR)$(PREFIX)$(BIN)"
 
 uninstall:
-	rm -f ${DESTDIR}/usr/bin/colourpipe.*
-	rm -f ${DESTDIR}/usr/bin/{javac,ecj}-colour
+	-rm -f "$(DESTDIR)$(PREFIX)$(BIN)"/colourpipe.*
+	-rm -f "$(DESTDIR)$(PREFIX)$(BIN)"/{javac,ecj}-colour

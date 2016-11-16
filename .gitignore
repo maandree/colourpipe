@@ -8,5 +8,3 @@ bin/
 *.sw[op]
 colourpipe.*
 *-colour
-/dist/
-!/dist/*/*/PKGBUILD

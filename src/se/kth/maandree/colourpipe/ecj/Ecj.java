@@ -1,6 +1,6 @@
 /**
  * colourpipe — Colourise program output
- * Copyright © 2012, 2013  Mattias Andrée  (maandree@member.fsf.org)
+ * Copyright © 2012, 2013  Mattias Andrée  (m@maandree.se)
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ import java.util.Scanner;
 /**
  * The is the main class of the `ecj` colouriser
  * 
- * @author  Mattias Andrée, <a href="mailto:maandree@kth.se">maandree@kth.se</a>
+ * @author  Mattias Andrée, <a href="mailto:m@maandree.se">m@maandree.se</a>
  */
 public class Ecj
 {
